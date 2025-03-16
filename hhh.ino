@@ -10,9 +10,9 @@
 #include <Blinker.h>
 #include <WiFiUdp.h>
 #include <WiFi.h>
-char auth[] = "0bd0c4677925"; //密钥
-char ssid[] = "航协4g钓鱼wifi"; //wifi名
-char pswd[] = "HKDHX603"; //wifi密码
+char auth[] = "xxxxxxxx"; //密钥
+char ssid[] = "xxxxxxxx"; //wifi名
+char pswd[] = "xxxxxxxx"; //wifi密码
 
 //The udp library class
 WiFiUDP udp;
@@ -105,9 +105,9 @@ void miotQuery(int32_t queryCode)
 void pcawaking()
 {
     int i=0;
-    char mac[6]={0x00,0xE0,0x1E,0x56,0x90,0x5B};  //mac地址
+    char mac[6]={0xXX,0xXX,0xXX,0xXX,0xXX,0xXX};  //mac地址
     char pac[102];
-    char * Address = "192.168.31.255";//udp adress //群发最后为.255
+    char * Address = "xxx.xxx.xxx.255";//udp adress //群发最后为.255
     int Port = 3333;//udp port
      //make magicpacket
     for(i=0;i<6;i++)
